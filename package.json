@@ -8,7 +8,8 @@
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
     "build": "tsc",
     "start": "node src/app.ts",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "watch-ts": "tsc -w"
 
   },
   "keywords": [],
