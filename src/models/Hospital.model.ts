@@ -6,12 +6,15 @@ import { collections } from "../utils/connect";
 export default class Hospital {
     constructor(
         public	name: String,
-        public address: String,
+        public phone: String,
+        public type : String, // which is one of the following [Governmental , Private , Others]
         public location : JSON,
         public bio : String,
+        public street_name : String,
+        public street_number : Number,
+        public city : String ,
         public numberOfRooms : Number,
         public availableRooms : Number,
-        public password: String,
         public _id?: ObjectId) {
         }
 
